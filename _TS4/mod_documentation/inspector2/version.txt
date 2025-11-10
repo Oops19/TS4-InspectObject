@@ -1,0 +1,5 @@
+Inspector2 v2.0.2 for The Sims 4 v1.118.257 and S4CL v3.15
+Created on 2025-10-28
+v2.0.2
+    Log the surface height
+

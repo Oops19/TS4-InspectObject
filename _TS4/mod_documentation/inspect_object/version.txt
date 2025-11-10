@@ -1,0 +1,5 @@
+InspectObject v2.0.6 for The Sims 4 v1.119.109 and S4CL v3.15
+Created on 2025-11-10
+v2.0.6
+    Refactoring: pie menu logic
+
