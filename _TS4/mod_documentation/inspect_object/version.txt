@@ -1,5 +1,5 @@
-InspectObject v2.0.6 for The Sims 4 v1.119.109 and S4CL v3.15
-Created on 2025-11-10
-v2.0.6
-    Refactoring: pie menu logic
+InspectObject v2.0.9 for The Sims 4 v1.120.140 and S4CL v3.17
+Created on 2026-01-24
+v2.0.9
+    Fix issue: S4CL NotImplementedError  / registering interactions
 

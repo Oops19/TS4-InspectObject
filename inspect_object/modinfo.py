@@ -34,10 +34,16 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '2.0.6'
+        return '2.0.9'
 
 
 '''
+v2.0.9
+    Fix issue: S4CL NotImplementedError  / registering interactions
+v2.0.8
+    Register interaction also to objects which don't want to be inspected
+v2.0.7
+    Print world, region, venue and zone name.    
 v2.0.6
     Refactoring: pie menu logic
 v2.0.5

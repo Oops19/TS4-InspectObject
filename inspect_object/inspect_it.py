@@ -35,6 +35,8 @@ from sims4communitylib.utils.sims.common_sim_routing_utils import CommonSimRouti
 from sims4communitylib.utils.terrain.common_terrain_location_utils import CommonTerrainLocationUtils
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from sims4communitylib.utils.sims.common_sim_utils import CommonSimUtils
+from ts4lib.utils.vanilla_names import VanillaNames
+from ts4lib.utils.worlds_and_neighbourhoods import WorldsAndNeighbourhoods
 
 log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), 'main')
 log.enable()
@@ -301,6 +303,17 @@ class InspectIt(metaclass=Singleton):
             log.debug(f"Error {e}")
 
         self._log_properties(interaction_target)
+
+        vn = VanillaNames()
+        world_id, world_name = vn.get_world_name()
+        world_id, neighbourhood_name = vn.get_neighbourhood_name(world_id)
+        venue_id, venue_name = vn.get_venue_name()
+        region_id, region_name = vn.get_region_name()
+        zone_id, zone_name = vn.get_zone_name()
+        log.debug(f"World: '{world_name}' >> '{neighbourhood_name}' ({world_id})")
+        log.debug(f"Region: '{region_name}' ({region_id})")
+        log.debug(f"Venue: '{venue_name}' ({venue_id})")
+        log.debug(f"Zone: '{zone_name}' ({zone_id})")
 
     def get_venue_instance_from_pick_location(self, pick: PickInfo):
         try:
